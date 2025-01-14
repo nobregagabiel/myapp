@@ -35,7 +35,7 @@ class HomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<HomePage> {
   @override
-  Widget build(BuildContext context, dynamic colors) {
+  Widget build(BuildContext context) {  // Removido o segundo parâmetro
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -49,7 +49,7 @@ class _MyHomePageState extends State<HomePage> {
             Expanded(
               child: Container(
                 alignment: Alignment.center,
-                // color: colors.amber,
+                // color: Colors.amber, // Exemplo de cor comentada
                 child: const Text('layout superior'),
               ),
             ),
@@ -61,7 +61,7 @@ class _MyHomePageState extends State<HomePage> {
                   Expanded(
                     child: Container(
                       // alignment: Alignment.center,
-                      // color: colors.red,
+                      // color: Colors.red,
                       // child: const Text('primeira coluna'),
                     ),
                   ),
@@ -70,10 +70,10 @@ class _MyHomePageState extends State<HomePage> {
                     child: Container(
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
-                        color: colors.blue,
+                        color: Colors.blue,
                         borderRadius: BorderRadius.circular(20),
                         border: Border.all(
-                          color: colors.black,
+                          color: Colors.black,
                           width: 1,
                         ),
                         boxShadow: const [
@@ -90,7 +90,7 @@ class _MyHomePageState extends State<HomePage> {
                   Expanded(
                     child: Container(
                       // alignment: Alignment.center,
-                      // color: colors.red,
+                      // color: Colors.red,
                       // child: const Text('terceira coluna'),
                     ),
                   ),
